@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="19" failures="0" name="weather.api.test.WeatherAPITest" time="0.002" errors="0" skipped="0">
+<testsuite tests="19" failures="0" name="weather.api.test.WeatherAPITest" time="0.001" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib"/>
@@ -26,15 +26,15 @@
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Mac OS X"/>
-    <property name="classworlds.conf" value="/Users/chenjieyun/apache-maven-3.6.2/bin/m2.conf"/>
+    <property name="classworlds.conf" value="/Users/chenjieyun/eclipse-workspace/test/maven/bin/m2.conf"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/chenjieyun/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
-    <property name="maven.conf" value="/Users/chenjieyun/apache-maven-3.6.2/conf"/>
+    <property name="maven.conf" value="/Users/chenjieyun/eclipse-workspace/test/maven/conf"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="10.14.5"/>
-    <property name="library.jansi.path" value="/Users/chenjieyun/apache-maven-3.6.2/lib/jansi-native"/>
+    <property name="library.jansi.path" value="/Users/chenjieyun/eclipse-workspace/test/maven/lib/jansi-native"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="user.home" value="/Users/chenjieyun"/>
     <property name="user.timezone" value="Australia/Sydney"/>
@@ -42,7 +42,7 @@
     <property name="java.specification.version" value="1.8"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="user.name" value="chenjieyun"/>
-    <property name="java.class.path" value="/Users/chenjieyun/apache-maven-3.6.2/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.class.path" value="/Users/chenjieyun/eclipse-workspace/test/maven/boot/plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre"/>
@@ -55,7 +55,7 @@
     <property name="java.ext.dirs" value="/Users/chenjieyun/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
     <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/classes"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="/Users/chenjieyun/apache-maven-3.6.2"/>
+    <property name="maven.home" value="/Users/chenjieyun/eclipse-workspace/test/maven"/>
     <property name="file.separator" value="/"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -64,23 +64,23 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="Scenario: Test Get Weather JSON API" name="Given url &apos;http://api.weatherapi.com/v1/forecast.json?key=210248d56f7846c8b3265042200505&amp;q=Sydney&amp;days=7&apos;" time="0.002"/>
+  <testcase classname="Scenario: Test Get Weather JSON API" name="Given url &apos;http://api.weatherapi.com/v1/forecast.json?key=210248d56f7846c8b3265042200505&amp;q=Sydney&amp;days=7&apos;" time="0.001"/>
   <testcase classname="Scenario: Test Get Weather JSON API" name="When method get" time="0"/>
   <testcase classname="Scenario: Test Get Weather JSON API" name="Then status 200" time="0"/>
-  <testcase classname="Scenario: Test Get Weather JSON API" name="Then def nextDayWeather = response.forecast.forecastday[1]" time="0"/>
+  <testcase classname="Scenario: Test Get Weather JSON API" name="Then def nextDayWeather = response.forecast.forecastday[0]" time="0"/>
   <testcase classname="Scenario: Test Get Weather JSON API" name="Then match response.location.name == &apos;Sydney&apos;" time="0"/>
   <testcase classname="Scenario: Test Get Weather JSON API" name="Then match nextDayWeather.date == &apos;2020-05-07&apos;" time="0"/>
   <testcase classname="Scenario: Test Get Weather JSON API" name="Then match nextDayWeather.day.uv == &apos;3.7&apos;" time="0"/>
-  <testcase classname="Scenario: Test Get Weather JSON API" name="Then match nextDayWeather.day.avgtemp_c == &apos;17.5&apos;" time="0"/>
+  <testcase classname="Scenario: Test Get Weather JSON API" name="Then match nextDayWeather.day.avgtemp_c == &apos;17.4&apos;" time="0"/>
   <testcase classname="Scenario: Test Get Weather JSON API" name="Then match nextDayWeather.astro.sunrise == &apos;06:34 AM&apos;" time="0"/>
   <testcase classname="Scenario: Test Get Weather JSON API" name="Scenario: Test Get Weather JSON API" time="0"/>
   <testcase classname="Scenario: Test Get Weather SOAP API" name="Given url &apos;http://api.weatherapi.com/v1/forecast.xml?key=210248d56f7846c8b3265042200505&amp;q=Sydney&amp;days=7&apos;" time="0"/>
   <testcase classname="Scenario: Test Get Weather SOAP API" name="When method get" time="0"/>
   <testcase classname="Scenario: Test Get Weather SOAP API" name="Then status 200" time="0"/>
   <testcase classname="Scenario: Test Get Weather SOAP API" name="Then match /root/location/name == &apos;Sydney&apos;" time="0"/>
-  <testcase classname="Scenario: Test Get Weather SOAP API" name="Then match /root/forecast/forecastday[2]/date == &apos;2020-05-07&apos;" time="0"/>
-  <testcase classname="Scenario: Test Get Weather SOAP API" name="Then match /root/forecast/forecastday[2]/day/uv == &apos;3.7&apos;" time="0"/>
-  <testcase classname="Scenario: Test Get Weather SOAP API" name="Then match /root/forecast/forecastday[2]/day/avgtemp_c == &apos;17.5&apos;" time="0"/>
-  <testcase classname="Scenario: Test Get Weather SOAP API" name="Then match /root/forecast/forecastday[2]/astro/sunrise == &apos;06:34 AM&apos;" time="0"/>
+  <testcase classname="Scenario: Test Get Weather SOAP API" name="Then match /root/forecast/forecastday[1]/date == &apos;2020-05-07&apos;" time="0"/>
+  <testcase classname="Scenario: Test Get Weather SOAP API" name="Then match /root/forecast/forecastday[1]/day/uv == &apos;3.7&apos;" time="0"/>
+  <testcase classname="Scenario: Test Get Weather SOAP API" name="Then match /root/forecast/forecastday[1]/day/avgtemp_c == &apos;17.4&apos;" time="0"/>
+  <testcase classname="Scenario: Test Get Weather SOAP API" name="Then match /root/forecast/forecastday[1]/astro/sunrise == &apos;06:34 AM&apos;" time="0"/>
   <testcase classname="Scenario: Test Get Weather SOAP API" name="Scenario: Test Get Weather SOAP API" time="0"/>
 </testsuite>

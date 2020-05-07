@@ -1,6 +1,6 @@
-17:09:59.907 [main] DEBUG c.i.karate.cucumber.CucumberRunner - init test class: class weather.api.test.WeatherAPITest
-17:09:59.994 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /Users/chenjieyun/eclipse-workspace/test/target/test-classes/weather/api/test/weather.feature
-17:10:00.500 [main] INFO  com.intuit.karate.ScriptBridge - karate.env system property was: null 
-17:10:01.021 [main] DEBUG com.intuit.karate.StepDefs - response time in milliseconds: 354
-17:10:01.119 [main] INFO  com.intuit.karate.ScriptBridge - karate.env system property was: null 
-17:10:01.192 [main] DEBUG com.intuit.karate.StepDefs - response time in milliseconds: 68
+15:09:17.851 [main] DEBUG c.i.karate.cucumber.CucumberRunner - init test class: class weather.api.test.WeatherAPITest
+15:09:17.939 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /Users/chenjieyun/eclipse-workspace/test/target/test-classes/weather/api/test/weather.feature
+15:09:18.450 [main] INFO  com.intuit.karate.ScriptBridge - karate.env system property was: null 
+15:09:19.083 [main] DEBUG com.intuit.karate.StepDefs - response time in milliseconds: 475
+15:09:19.176 [main] INFO  com.intuit.karate.ScriptBridge - karate.env system property was: null 
+15:09:19.249 [main] DEBUG com.intuit.karate.StepDefs - response time in milliseconds: 68
