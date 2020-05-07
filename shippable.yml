@@ -1,0 +1,3 @@
+build:
+  ci:
+    - maven/bin/mvn clean test
